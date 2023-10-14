@@ -1,0 +1,20 @@
+.menus{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+.active-option{
+    background-color: #d1d7da;
+}
+.menus > div {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+.menus > div:hover{
+    background-color: #d1d7da;  
+}

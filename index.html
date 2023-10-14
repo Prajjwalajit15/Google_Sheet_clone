@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menus.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <div>File</div>
+        <div class="Home">Home</div>
+        <div>Insert</div>
+        <div>Layout</div>
+        <div>Help</div>
+    </div>
+
+    <div id="options">
+        <div class="menus">
+            <div id="bold" onclick="onClickBold(this)" ><span class="material-icons">
+                format_bold
+                </span></div>
+            <div id="italic" onclick="onClickItalic(this)"><span class="material-icons">
+                format_italic
+                </span></div>
+            <div id="underlined" onclick="onClickUnderLined(this)"><span class="material-icons">
+                format_underlined
+                </span></div>
+
+            <div class="material-icons active-option text-allign" data-value="start" onclick="onClickTextAllign(this)">
+                format_align_left
+            </div>
+            <div class="material-icons text-allign" data-value="right" onclick="onClickTextAllign(this)">
+                format_align_right
+            </div>
+            <div class="material-icons text-allign" data-value="center" onclick="onClickTextAllign(this)">
+                format_align_center
+            </div>
+
+            <div id="text-color">
+                <label for="color-picker"><span class="material-icons">
+                    border_color
+                    </span></label>
+                <input type="color" id="color-picker" onchange="onChangeTextColor(this)" style="visibility: hidden; width: 0px; height: 0px;">
+            </div>
+
+            <div id="bg-color">
+                <label for="bgcolor-picker"><span class="material-icons">
+                    format_color_fill
+                    </span></label>
+                <input type="color" id="bgcolor-picker" onchange="onChangeBackgroundColor(this)" style="visibility: hidden; width: 0px; height: 0px;">
+            </div>
+        </div>
+ 
+        <span id="active-cell">null</span>
+    </div>
+
+    <div id="header">
+        <b id="Sno">S.No</b>
+    </div>
+
+    <section id="body"></section>
+
+    <script src="./options.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
