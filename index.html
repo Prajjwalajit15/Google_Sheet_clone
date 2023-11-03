@@ -8,6 +8,8 @@
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/800px-Google_Sheets_logo_%282014-2020%29.svg.png" type="image/png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./menus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -21,7 +23,20 @@
     </div>
 
     <div id="options">
+        
         <div class="menus">
+            <div class="material-symbols-outlined" id="copy">
+                content_copy
+            </div>
+            <div class="material-symbols-outlined" id="cut">
+                content_cut
+            </div>
+            <div class="material-symbols-outlined" id="paste">
+                content_paste
+            </div>
+            
+            
+
             <div id="bold" onclick="onClickBold(this)" ><span class="material-icons">
                 format_bold
                 </span></div>
@@ -55,9 +70,16 @@
                     </span></label>
                 <input type="color" id="bgcolor-picker" onchange="onChangeBackgroundColor(this)" style="visibility: hidden; width: 0px; height: 0px;">
             </div>
+
+             
+             
+             <div id="download"><i class="fa-solid fa-cloud-arrow-down download"></i></div>
+             <div id="upload"><i class="fa-solid fa-cloud-arrow-up upload"></i></div>
+
         </div>
- 
-        <span id="active-cell">null</span>
+        
+        
+        <span id="active-cell">null</span>  
     </div>
 
     <div id="header">
